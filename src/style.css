@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+* {font-family: 'Almarai', sans-serif; letter-spacing:normal !important;}
+
+.homePageNavBarIcons {
+    font-size: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+.textOverFlow {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.v-card {
+    border-radius: 10px !important;
+    box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, 0.288) !important; 
+    /* border: 1px var(--v-primary-base) solid !important; */
+}
+
+h1,h2 {
+  color: var(--v-primary-base);
+}
+
+.vue2leaflet-map {
+    z-index: 0 !important;
+}
+
+.disableSelection {
+    -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none;
+        user-select: none; 
+}
+
+
+.v-app-bar {
+    box-shadow: 0px 0px 15px #00000034 !important;
+    background-color: var(--v-background-base) !important;
+
+}
+
+.v-app-bar .v-toolbar__title {
+    padding-right: 10px;
+    border-right: 5px var(--v-primary-base) solid;
+}
+
+hr {
+    opacity: 0.5 !important;
+}
+
+@media print {
+    @page {
+      size: A4;
+      scale: 50;
+      margin: 20px;
+    }
+    body,
+    html {
+      background-color: #fff !important;
+    }
+  
+   
+    .v-data-table__wrapper table {
+      width: 100% !important;
+    }
+    .v-main {
+      padding: 0px !important;
+    }
+    body * {
+      visibility: hidden !important;
+    }
+    .v-navigation-drawer,
+    .v-app-bar {
+      display: none !important;
+    }
+    #resultPrint #printableArea,
+    #resultPrint #printableArea * {
+      visibility: visible !important;
+    }
+    #resultPrint #printableArea {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .v-navigation-drawer__content .v-list-item--active .v-icon , .v-navigation-drawer__content .v-list-item--active{
+    color: var(--v-primary-base) !important;
+    
+  }
+
+  .v-list-item__icon {
+    transition: 200ms !important;
+  }
+  .v-navigation-drawer{
+    /* border-radius: 20px 0px 0px 20px; */
+    box-shadow: 0px 0px 10px 0px #0000005c;
+    background-position: center center !important;
+    border: none !important;
+    outline: none !important;
+  }
+
+  .v-dialog--fullscreen > .v-card {
+    padding: 10px !important;
+  }
+  
+  .v-data-table__expanded {
+    box-shadow: none !important;
+  }
